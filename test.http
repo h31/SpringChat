@@ -1,0 +1,13 @@
+# curl http://localhost:8080/messages -d '{"date": 123, "nickname": "abc", "text": "message"}' -v -H 'Content-type:application/json'
+POST http://localhost:8080/messages
+Content-Type: application/json
+
+{
+  "date": 123,
+  "nickname": "abc",
+  "text": "message"
+}
+
+###
+
+GET http://localhost:8080/messages
